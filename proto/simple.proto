@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package proto;
+option go_package="./proto";
+
+
+service go_grpcService {
+    rpc GET_INFO_USER(ExampleGetRequest) returns (GET_USER_RESULT) {}
+}
+
+message GET_USER_RESULT{
+    string response_code =1;
+    string response_msg = 2;
+    ExampleGetResult response_data = 3;
+}
+
+message ExampleGetResult {
+    string full_name =1;
+    int64 age =2;
+}
+message ExampleGetRequest {
+    string full_name =1;
+}
