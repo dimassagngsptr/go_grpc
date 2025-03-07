@@ -3,10 +3,26 @@
 
 -[Golang Protocol Compiler](https://grpc.io/docs/languages/go/quickstart/)
 
-## Step
-#### 1.`clone repository`
+## Step by step
+#### clone repository`
+    git clone https://github.com/dimassagngsptr/go_grpc
+    
+#### Install Dependencies
+    go mod tidy
 
-#### 2.`go mod tidy`
+#### Run Application
+     go run main.go
 
-Run Application
-#### 3.`go run main.go`
+#### Open postman
+  -Click New 
+  
+  -Choose GRPC
+
+  -Click service definition
+
+  -Import file
+
+  -Select service 
+
+  
+![image](https://github.com/user-attachments/assets/c0d1b074-c189-4563-85e0-8e6c002cf2a2)
